@@ -1,0 +1,25 @@
+{
+  "name": "slicc-syntax-support",
+  "displayName": "Slicc syntax support",
+  "description": "VScode extension for GEM5 Ruby SLICC",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "slicc",
+      "aliases": ["slicc", "slicc"],
+      "extensions": [".sm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "slicc",
+      "scopeName": "source.sm",
+      "path": "./syntaxes/slicc.tmLanguage.json"
+    }]
+  }
+}
